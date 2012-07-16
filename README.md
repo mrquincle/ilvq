@@ -15,7 +15,7 @@ Almende and DO bots have been using ARTMAP (the unsupervised version of Adaptive
 ## An example
 Our results for ARTMAP look much better, but the following is the genuine result of ILVQ. There are two classes, one inside a circle, one outside of the circle. The expected result on visualisation would be a perfect circle. However, because of the dynamics in ILVQ it is apparently difficult to create proper circular regions.
 
-![alt text](https://github.com/mrquincle/rur-builder/raw/master/doc/ilvq_circle.jpg "ILVQ circle")
+![alt text](https://github.com/mrquincle/ilvq/raw/master/doc/ilvq_circle.jpg "ILVQ circle")
 
 ## Where can I read more?
 [Wikipedia](http://en.wikipedia.org/wiki/Learning_Vector_Quantization)
