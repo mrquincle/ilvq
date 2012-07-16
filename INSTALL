@@ -1,0 +1,20 @@
+There are only a few dependencies:
+ * PLplot
+ * pthread (POSIX)
+ * rt (message queues, available on almost all Linux systems)
+
+The default install on Ubuntu should be:
+
+* sudo aptitude install libplplot-c++10
+
+However, it results in an error on my system: 
+* undefined reference to `plstream::line(int, double*, double*)
+
+Hence, I compiled the plplot library from source:
+* cd ~/temp
+* apt-get source libplplot-c++10
+* mkdir build; cd build; cmake .. -DENABLE_qt:bool=OFF; make; sudo make install
+
+This will install in /usr/local instead of /usr, so probably be found before the system lib (but that depends on your system).
+
+Have fun!
